@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    background: url('the.jpg');
+    
+    
+    border-radius: 8px;
+
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    height: 100%; /* Adjust the height as needed */
+    width: 100%;
+    float: left ;
+}
+
+img {
+    max-width: 100%;
+height: 100vh;
+    height: auto;
+    display: block;
+}
+
+.form-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+    width: calc(100% - 300px);
+    max-width: 800px; /* Adjust the maximum width of the form container */
+}
+.pic {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 300px;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    
+}
+ .pic {
+        position: static;
+        height: auto;
+        width: 100%;
+        
+    }
+
+    .form-container {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+.pic {
+    flex: 1; /* Take up remaining space */
+    max-width: 50%; /* Set maximum width for the image */
+    height: 100%;
+}
+
+.form-container {
+    flex: 1; /* Take up remaining space */
+    max-width: 50%; /* Set maximum width for the form container */
+    padding: 20px;
+}
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: blueviolet;
+}
+.pic {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3000px; /* Adjust the width of the image */
+    
+}
+
+.form-container {
+    position: fixed;
+    right: 60px;
+    top: 150px;
+    bottom: 120px;
+    padding: 20px;
+    width: calc(3000% - 300px); /* Calculate the width of the form container */
+    max-width: 400px;
+    height: 50%;
+    background-color:  #e6f7ff;
+     /* Adjust the maximum width of the form container */
+}
+
+.inputbox {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color:blue; /* Green border color on focus */
+}
+
+i.bx {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.keep-me-signed-in {
+    margin-bottom: 15px;
+}
+.Keepmesignedin {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Add some space below */
+}
+
+/* Style the checkbox input */
+.Keepmesignedin input[type="checkbox"] {
+    margin-right: 5px; /* Add some space to the right of the checkbox */
+}
+
+/* Style the checkbox label */
+.Keepmesignedin label {
+    font-size: 14px; /* Adjust font size */
+    /* Text color */
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: blueviolet; /* Green login button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.btn:hover {
+    background-color: blue;
+} 
+
+.registration a,
+.rememberme a {
+    color: blueviolet; /* Green color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.registration a:hover,
+.rememberme a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+.registration p {
+    margin-bottom: 4px; /* Remove the bottom margin from the paragraph */
+}
+
+
+
+@keyframes borderAnimation {
+    0% {
+        border-color: blue;
+    }
+    50% {
+        border-color: #e6f7ff;
+    }
+    100% {
+        border-color: blueviolet;
+    }
+}
+
+.form-container {
+    /* Your existing styles */
+    border: 2px solid transparent; /* Set initial border style */
+    animation: borderAnimation 3s infinite; /* Apply animation to border */
+}
+.btn {
+    /* Your existing styles */
+    animation: pulse 6s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.inputbox,
+.btn {
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.inputbox:hover,
+.btn:hover {
+    transform: scale(1.05); /* Scale up the elements on hover */
+}
+
+
+
+/* Default styles */
+
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+    /* Styles for tablets and smaller devices */
+    .container {
+        flex-direction: column;
+        align-items: center; /* Center items vertically */
+    }
+
+    
+    
+
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    /* Styles for mobile devices */
+    .form-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    
+
+
+   
